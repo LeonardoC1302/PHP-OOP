@@ -4,14 +4,19 @@
 // require 'classes/Clients.php';
 // require 'classes/Details.php';
 
-// Autoload classes
+// Include classes using namespace
+use App\Clients;
+use App\Details;
+
+// Autoload classes (using namespace)
 function myAutoLoad($className){
-    require __DIR__ . '/classes/' . $className . '.php';
+    $parts = explode('\\', $className);
+    require __DIR__ . '/classes/' . $parts[1] . '.php';
 }
 
 spl_autoload_register('myAutoLoad');
 
-// Instantiate the classes
+// Instantiate the classes (using namespace)
 $details = new Details();
 $clients = new Clients();
 

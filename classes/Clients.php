@@ -1,4 +1,5 @@
 <?php
+namespace App;
 class Clients {
     public function __construct()
     {
