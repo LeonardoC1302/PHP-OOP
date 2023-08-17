@@ -1,0 +1,16 @@
+{
+    "name": "leona/php-oop",
+    "description": "Learning Namespaces and Autoload",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leonardo",
+            "email": "leonardo.cespedes1302@gmail.com"
+        }
+    ],
+    "require": {}
+}
